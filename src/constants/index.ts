@@ -26,11 +26,10 @@ export const POOL_HIDE: { [key: string]: string[] } = {
   [SupportedNetwork.MORDOR]: [],
 }
 
-// Start blocks - TODO: update after ETCswap V3 deployment
-// These should be set to the block number when ETCswapV3Factory was deployed
+// Start blocks - ETCswap V3 Factory deployment blocks
 export const START_BLOCKS: { [key: string]: number } = {
-  [SupportedNetwork.ETC]: 0, // TODO: Set to factory deployment block on ETC mainnet
-  [SupportedNetwork.MORDOR]: 0, // TODO: Set to factory deployment block on Mordor testnet
+  [SupportedNetwork.ETC]: 19714286, // ETCswap V3 Factory deployment block on ETC mainnet
+  [SupportedNetwork.MORDOR]: 11041958, // ETCswap V3 Factory deployment block on Mordor testnet
 }
 
 export interface WalletInfo {
